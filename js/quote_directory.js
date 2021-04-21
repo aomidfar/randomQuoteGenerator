@@ -16,13 +16,13 @@ const quotes = [  {
     citation: "",
     year :""
   },
-  { quote: "",
-  source: "",
+  { quote: "Do it with passion, or not at all.",
+  source: "Rosa Nouchette Carey",
   citation: "",
   year :""
   },
-  { quote: "",
-  source: "",
+  { quote: "The grass is greener where you water it.",
+  source: "Neil Barringham",
   citation: "",
   year :""
   },
