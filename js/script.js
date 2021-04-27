@@ -1,17 +1,12 @@
 /******************************************
 Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
+project 1 - A Random Quote Generator by Ali Omidfar
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
-/*** 
- * `quotes` array 
-*/
 /***
- * `getRandomQuote` function
+ * `getRandomQuote` function generates a random number not higher than the length of the objects 
+ * it then puts that number object into randomQuote and returns it
 ***/
 
 function getRandomQuote (){
@@ -35,7 +30,7 @@ function printQuote() {
     
    html += `
     <br>
-    <h3>    _${randomQuote.citation}</h3> `;}
+    <h3>    ${randomQuote.citation}</h3> `;}
     
     if (quotes.year !== 'undefined'){
       html += ` <h3>    ${randomQuote.year}</h3> `; }; 
@@ -47,10 +42,25 @@ function printQuote() {
 //document.querySelector('main').innerHTML = printQuote();
 document.getElementById('quote-box').innerHTML = printQuote();
 
-//printQuote();
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
-***/
+// picking a few color choices and storing it in colorChoices
+let colorChoices = [
+'green',
+'blue',
+'brown',
+'black',
+'yellow',
+'orange'
+]
+
+// using random number code (up to length of the colors) to pick that number color and put on background
+let randomColor = colorChoices[Math.floor( Math.random() * colorChoices.length )];
+document.body.style.backgroundColor = randomColor;
+
+// auto refresh function every 10 seconds
+setInterval(function(){
+  window.location.reload(1);
+}, 10000);
+
+
 
  document.getElementById('load-quote').addEventListener("click", printQuote, false);
