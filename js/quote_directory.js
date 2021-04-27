@@ -3,16 +3,16 @@
 const quotes = [  { 
     quote: "Life is too short to be living somebody else's dream.",
     source: "Hugh Hefner",
-    citation: "citation",
-    year: "000"
+    citation: "elite daily",
+    year: ""
   },
   { quote: "The man who has confidence in himself gains the confidence of others.",
     source: "Hasidic Proverb",
-    citation: "citation",
-    year :"1111"
+    citation: "www.quotespedia.org",
+    year :""
   },
-  { quote: "",
-    source: "",
+  { quote: "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+    source: "Mahatma Gandhi",
     citation: "",
     year :""
   },
@@ -26,8 +26,9 @@ const quotes = [  {
   citation: "",
   year :""
   },
-  { quote: "",
-  source: "",
+  { quote: "Democracy is being allowed to vote for the candidate you dislike least.",
+  source: "Robert Byrne",
   citation: "",
-  year :""
+  year :"1976",
+  tag: "political"
   }]
